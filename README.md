@@ -11,3 +11,7 @@ Il sito si basa su Firebase hosting e Firebase Realtime database. Se dovessi ave
 
 ## Demo 
 Il sito <a href="https://aiutiamoci-piacenza.it">aiutiamoci-piacenza.it</a> si basa su questo template ed è stato costruito esclusivamente per la città di Piacenza.
+
+
+## Supporto
+Per eventuali problemi o domande, visto l'urgenza che necessità questa situazione, potete contattarmi su Twitter: <a href="https://twitter.com/iC0rraxX">@iC0rraxX</a>.
