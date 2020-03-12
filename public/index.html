@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="it" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="Un aiuto per i cittadini di Piacenza in quarantena.">
+    <meta name="author" content="Corrado Verhoeven">
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#ffffff">
+
+    <title>#Aiutiamoci</title>    
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	
+    <style>
+	  .bd-placeholder-img {
+	    font-size: 1.125rem;
+	    text-anchor: middle;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	  }
+
+	@media (min-width: 576px) {
+	    .card-columns {
+	        column-count: 1;
+	    }
+	}
+	
+	@media (min-width: 768px) {
+	    .card-columns {
+	        column-count: 2;
+	    }
+	    .bd-placeholder-img-lg {
+	      font-size: 3.5rem;
+	    }
+
+	}
+	
+	@media (min-width: 992px) {
+	    .card-columns {
+	        column-count: 3;
+	    }
+	}
+	
+	@media (min-width: 1200px) {
+	    .card-columns {
+	        column-count: 3;
+	    }
+	}      
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    <header>
+	    
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">
+	    <img src="img/logo_circle.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+	    
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+        	<div id="menu-recent" class="nav-link">
+         	 Recenti
+        	</div>
+        </li>
+        <li class="nav-item">
+	        <div id="menu-my-posts" class="nav-link">
+	         Le mie richieste
+	    	</div>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+	    <button id="add" type="button" class="btn btn-primary" style="margin-right:10px;">Aggiungi</button> 
+        <button id="sign-out-button" class="btn btn-outline-secondary my-2 my-sm-1">Esci</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+  	
+<!-- MODAL -->	
+	<div class="modal fade" id="welcomeModal">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+		  
+		    <!-- Modal Header -->
+		    <div class="modal-header">
+		      <h4 class="modal-title">⚠️ Attenzione!</h4>
+		      <button type="button" class="close" data-dismiss="modal">&times;</button>
+		    </div>
+		    
+		    <!-- Modal body -->
+		    <div class="modal-body">
+		      <p>Nella speranza che questo strumento possa esserti utile, ti comunichiamo che il volontario non entrerà <b>per nessun motivo</b> nel tuo appartamento, per tutelare la tua salute e la tua sicurezza. Per qualsiasi dubbio o idea potete contattarci a questo numero <a href="tel:+393311375054">3311375054.</a></p>
+		    </div>
+		    
+		    <!-- Modal footer -->
+		    <div class="modal-footer">
+		      <button type="button" class="btn btn-danger" data-dismiss="modal">Ho capito</button>
+		    </div>
+		    
+		  </div>
+		</div>
+	</div>  	
+  	
+    <h1 class="mt-5">Aiutiamoci, Piacenza</h1>
+    <p class="lead">Il sito nasce con l'intento di far comunicare <b>volontari</b> e coloro che hanno bisogno di <b>aiuto</b> in questo particolare momento di crisi.</p>
+	<hr>
+   </div>
+   
+   <section id="page-splash">
+	<div class="container" align="center" style="padding:20px 10px 10px 10px">
+      <button id="sign-in-button" class="btn btn-outline-primary btn-lg btn-block">Login con Google</button>
+      <button id="sign-in-button-fb" class="btn btn-outline-primary btn-lg btn-block">Login con Facebook</button>
+      
+<!--
+      <br>
+      <form>
+	    <div class="form-group">
+	        <input type="tel" id="phoneNumber" class="form-control" placeholder="Enter tel">
+		</div>
+		<div class="form-group">
+	        <input type="text" id="code" class="form-control" placeholder="Enter code">
+		</div>
+-->
+        <!-- Add two buttons to submit the inputs -->
+<!--
+        <button id="sign-in-button-tel" type="button" onclick="submitPhoneNumberAuth()">
+          SIGN IN WITH PHONE
+        </button>
+        <button id="confirm-code" type="button" onclick="submitPhoneNumberAuthCode()">
+          ENTER CODE
+        </button>
+-->
+    
+        <!-- Add a container for reCaptcha -->
+<!--
+        <div id="recaptcha-container"></div>
+      </form>
+      
+-->
+      
+   </section>
+   
+   
+    <!-- RECENTI - Show a list of recent posts -->
+    <section class="container" id="recent-posts-list" style="display:none">
+    	<div class="card-columns posts-container">
+		</div>
+		<br>
+    </section>
+
+    <!-- LE MIE RICHIESTE - Show the list of user's posts --> 
+    <section class="container" id="user-posts-list" style="display:none">
+    	<div class="card-columns posts-container">
+		</div>
+    </section>
+
+    <!-- Show the list of top user's posts // nascosto, non interessa in questo use case -->
+    <section class="container" id="top-user-posts-list" style="display:none">
+    	<div class="card-columns posts-container">
+		</div>
+    </section>
+    
+    
+    <!-- Show the add post form -->
+    <section class="mdl-grid content" id="add-post" style="display:none">
+<!--       <div class="mdl-cell mdl-cell--12-col mdl-grid"> -->
+	  <div class="container">
+<!-- 	  		<br> -->
+          <!-- Card containing the inputs to add a new messages -->
+          <div class="card mdl-card">
+            <h5 class="card-header">Aggiungi richiesta</h5>
+            <div class="card-body">
+	          <div class="card-text">
+              <form id="message-form" action="#">
+                <div class="form-group mdl-textfield">
+	              <label for="new-post-title">Titolo del post</label>
+                  <input class="form-control" type="text" id="new-post-title" required>
+                </div>
+                
+                 <div class="form-group mdl-textfield">
+	              <label for="recapito">Numero di telefono</label>
+                  <input class="form-control" type="text" id="recapito" required>
+                  <small class="form-text text-muted">Inserisci un recapito telefonico in modo che i volontari possano ricontattatarti.</small>
+                </div>
+
+                <div class="form-group mdl-textfield">
+	              <label for="new-post-message">La tua richiesta</label>
+                  <textarea class="form-control" rows="3" id="new-post-message" required></textarea>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Pubblica</button>
+              </form>
+              
+	          </div>
+          	</div>
+            
+          </div>
+      </div>
+      
+     	<br>
+    </section>
+	
+</main>
+
+<!-- Begin page footer -->
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Built with ❤️ by <a href="https://www.corradoverhoeven.com">Corrado Verhoeven</a></span>
+  </div>
+</footer>
+
+<!-- script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="/__/firebase/7.9.3/firebase-app.js"></script>
+<script src="/__/firebase/7.9.3/firebase-auth.js"></script>
+<script src="/__/firebase/7.9.3/firebase-database.js"></script>
+<script src="/__/firebase/init.js"></script>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/mat.js"></script>
+</body>
+</html>
+
