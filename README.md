@@ -4,7 +4,7 @@
 </p>
 
 ## Description
-Template to quickly create a platform that connects volunteers and needy people in this time of health crisis.
+A template to quickly create a platform that connects volunteers and needy people in this time of health crisis.
 
 ## Technical information
 This web app is based on Firebase Hosting and Firebase Realtime database. If you have problems during installation, you may need to switch from the free plan to the Blaze plan (pay-as-you-go).
