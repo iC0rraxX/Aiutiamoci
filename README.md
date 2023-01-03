@@ -1,6 +1,7 @@
 # Aiutiamoci
+<i>"Let's help" in English</i>
 <p align="center">
-  <img width="400"  src="git-social.png">
+  <img width="600" src="git-social.png">
 </p>
 
 ## Description
