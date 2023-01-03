@@ -6,11 +6,11 @@
 ## Description
 A template to quickly create a platform that connects volunteers and needy people in this time of health crisis.
 
-## Technical information
+## Deployment and installation
 This web app is based on Firebase Hosting and Firebase Realtime database. If you have problems during installation, you may need to switch from the free plan to the Blaze plan (pay-as-you-go).
 
 ## Demo 
-The site <a href="https://aiutiamoci-piacenza.it">aiutiamoci-piacenza.it</a> is based on this template and was built exclusively for the city of Piacenza.
+The site <a href="https://aiutiamoci-piacenza.web.app">aiutiamoci-piacenza.web.app</a> is based on this template and was built exclusively for the city of Piacenza.
 
 
 ## Support
