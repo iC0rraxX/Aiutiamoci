@@ -14,5 +14,5 @@ The site <a href="https://aiutiamoci-piacenza.web.app">aiutiamoci-piacenza.web.a
 
 
 ## Support
-For any problems or questions, given the urgency that this situation requires, you can contact me on Twitter:
-<a href="https://twitter.com/iC0rraxX">@iC0rraxX</a>.
+For any problems or questions, given the urgency that this situation requires, you can contact me 
+<a href="mailto:corradoverhoeven@gmail.com">here</a>.
